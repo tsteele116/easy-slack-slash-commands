@@ -1,1 +1,1 @@
-# This is going to be the Slash command receiver for the path command
+# This is going to be the Slash command receiver
