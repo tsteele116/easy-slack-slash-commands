@@ -2,15 +2,6 @@ from bottle import run,post,request,response,route
 import os
 import urllib
 
-
-@route('/path',method="post")
-def gen_path_3():
-    postdata = request.forms.get("text")
-    output_path = str("sndwserv:/" + urllib.quote(postdata))
-    package = {"response_type": "in_channel", "text": "{}".format(output_path)}
-    response.content_type = 'application/json'
-    return package
-
 @post('/simple')
 def simple_test():
     return "(:point_up: ՞ਊ ՞):point_up:"
